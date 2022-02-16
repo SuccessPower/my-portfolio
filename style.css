@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: rgb(46, 0, 48);
+}
+#navbar {
+    position: fixed;
+    background-color: rgb(31, 31, 92);
+    /* float: right; */
+    width: 100%;
+    height: 100px;
+    float: right;
+    text-align: ju;
+    /* padding: 20px; */
+    top: 0px;
+    left: 0px;
+    right: 0px
+    
+}
+
+#profile-pics {
+    display: grid;
+    border-radius: 50%;
+    padding: 100px 0px 0px 0px;
+    align-content: center;
+    margin: 130px 400px 0px 510px;
+    max-width: 200px;
+    height: auto;
+}
+
+#myname {
+    font-size: 50px;
+    /* padding: 0px 200px 0px; */
+    text-align: center;
+    color: white;
+}
+
+#webdev {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(31, 31, 92);
+    font-style: italic;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    float: right;
+    padding: 40px;
+}
+#welcome-section {
+    background-color: rgb(46, 0, 48);
+    height: 569px;
+    bottom: 0px;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: -1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 0rem;
+}
+
+.project-title {
+    text-align: center;
+    padding: 50px 100px 0px 100px;
+    font-size: 50px;
+    color: white;
+}
+
+#projects {
+    /* height: 569px; */
+    background-color: rgb(53, 53, 53);
+    /* top: 0px;
+    bottom: 0px; */
+
+}
+
+#contact {
+    height: 400px;
+    background-color: rgb(46, 0, 48);
+
+}
+footer {
+    background-color: rgb(31, 31, 92);
+    height: 50px;
+}
+
+/* #webdev {
+    font-size: 20px;
+    margin: 100px 100px 0px;
+} */
+
+span {
+    text-align: center;
+    background-color: rgb(110,0, 114);
+    height: 80px;
+    width: 100px;
+}
+
+#projectname {
+    background-color: rgb(46, 0, 48);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.imgbox {
+    width: 100%;
+    box-align: center;
+}
+
+#work {
+    font-size: 50px;
+    color: white;
+    padding: 100px 100px 0px 400px;
+}
+#github {
+    width: 50px;
+}
+
+#twitter {
+    width: 30px;
+}
+
+
+#profile-link {
+    padding: 5px 160px 5px 5px;
+    animation-duration: 2s;
+    align-content: center;
+    display: flex;
+    font-size: 20px;
+    box-shadow: 20px;
+    color: white;
+    text-shadow: 10px 10px 10x black;
+}
+#profile-link:hover {
+    animation: forwards    
+}
+
+
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    
+  }
+
+  /* #profile-pics {
+      position: flex;
+  }
+
+  #navbar {
+      float: left;
+  } */
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  /* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+  
+  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+  @media only screen and (max-width: 600px) {
+    div.example {
+      font-size: 30px;
+    }
+  }
+  
