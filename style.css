@@ -6,13 +6,12 @@ body {
 }
 #navbar {
     position: fixed;
+    display: block;
     background-color: rgb(31, 31, 92);
-    /* float: right; */
-    max-width: auto;
-    min-height: auto;
-    /* float: right; */
+    max-width: 100%;
+    height: auto;
     text-align: center;
-    /* padding: 20px; */
+    padding: 14px 16px;
     top: 0px;
     left: 0px;
     right: 0px
@@ -26,11 +25,14 @@ a {
     padding: 40px;
 }
 
+a:hover {
+    background-color: rgb(46, 0, 48);
+}
 #profile-pics {
     display: flex;
     border-radius: 50%;
     align-items: center;
-    margin: 130px 400px 0px 450px;
+    margin: 150px 400px 0px 450px;
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -151,12 +153,8 @@ footer {
     font-size: 20px;
     box-shadow: 20px;
     color: white;
-    text-shadow: 10px 10px 10x black;
+    text-shadow: 10px 10px 10x black; 
 }
-#profile-link:hover {
-    animation: forwards    
-}
-
 
 
 
