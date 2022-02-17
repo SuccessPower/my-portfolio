@@ -1,110 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Success Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-            /* On screens that are 992px or less, set the background color to blue */
-    @media screen and (max-width: 992px) {
-    body {
-        /* background-color: none; */
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: rgb(46, 0, 48);
+}
+#navbar {
+    position: fixed;
+    display: block;
+    background-color: rgb(31, 31, 92);
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 14px 16px;
+    top: 0px;
+    left: 0px;
+    right: 0px
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    float: right;
+    padding: 40px;
+}
+
+a:hover {
+    background-color: rgb(46, 0, 48);
+}
+#profile-pics {
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    margin: 150px 400px 0px 450px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#myname {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#webdev {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(31, 31, 92);
+    font-style: italic;
+
+}
+
+#welcome-section {
+    background-color: rgb(46, 0, 48);
+    height: 569px;
+    bottom: 0px;
+
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: -1rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 0rem;
+}
+
+.project-title {
+    text-align: center;
+    padding: 50px 100px 0px 100px;
+    font-size: 50px;
+    color: white;
+}
+
+#projects {
+    /* height: 569px; */
+    background-color: rgb(53, 53, 53);
+    /* top: 0px;
+    bottom: 0px; */
+
+}
+
+#webdev {
+    background-color: white;
+}
+
+span {
+    text-align: center;
+    background-color: rgb(110,0, 114);
+    height: 80px;
+    width: 100px;
+}
+
+#projectname {
+    background-color: rgb(46, 0, 48);
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.imgbox {
+    width: 100%;
+    box-align: center;
+}
+
+#contact {
+    max-width: 100%;
+    height: 100px;
+    background-color: rgb(46, 0, 48);
+
+}
+
+#work {
+    font-size: 50px;
+    color: white;
+    display: auto;
+    align-content: center;
+    text-align: center;
+    margin-top: 150px;
+    /* padding: 100px 100px 0px 400px; */
+}
+#github {
+    max-width: 50px;
+}
+
+#twitter {
+    max-width: 30px;
+}
+
+footer {
+    background-color: rgb(31, 31, 92);
+    max-width: auto;
+    min-height: 50px;
+    margin-top: 200px;
+    
+}
+
+
+#profile-link {
+    padding: 5px 160px 5px 5px;
+    animation-duration: 2s;
+    align-content: center;
+    display: flex;
+    font-size: 20px;
+    box-shadow: 20px;
+    color: white;
+    text-shadow: 10px 10px 10x black; 
+}
+
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+    
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  /* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
     }
+  }
+  
+  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+  @media only screen and (max-width: 600px) {
+    div.example {
+      font-size: 30px;
     }
-
-    /* On screens that are 600px or less, set the background color to olive */
-    @media screen and (max-width: 600px) {
-    body {
-        /* background-color: none; */
-    }
-    }
-    </style>
-</head>
-<body>
-    <nav id="navbar">
-        <a href="#welcome-section">About</a>
-        <a href="#projects">Work</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="welcome-section">
-        <img id="profile-pics" src="image/prifile-pics.jpg" alt="profile pics">
-        <h1 id="myname">Hi! my name is Success</h1>
-        <p id="webdev">I am a web developer</p>
-    </section>
-
-    <section id="projects">
-        <h2 class="project-title">These are some of my projects</h2>
-        <div class="container">
-
-            <div class="project-tile">
-                <a href="https://successpower.github.io/product-landing-page/" target="_blank">
-                <img class="imgbox" src="image/2.png" alt="product-landing-page">
-                <p id="projectname">Product Landing Page</p>
-                </a>
-            </div>
-
-            <div class="box2">
-                <a href="https://successpower.github.io/chinua-achebe-tribute-page/" target="_blank">
-                <img class="imgbox" src="image/1.png" alt="chinua-achebe-tribute-page">
-                <p id="projectname">Tribute Page</p>
-                </a>
-            </div>
-
-            <div class="box2">
-                <a href="https://successpower.github.io/technical-documentation-page/" target="_blank">
-                <img class="imgbox" src="image/3.png" alt="Technical Documentation Page">
-                <p id="projectname">Technical Documentation Page</p>
-                </a>
-            </div>
-
-            <div class="box2">
-                <a href="https://successpower.github.io/survey-form/" target="_blank">
-                <img class="imgbox" src="image/4.png" alt="Survey Form">
-                <p id="projectname">Survey Form</p>
-                </a>
-            </div>
-
-            <div class="box2">
-                <a href="https://successpower.github.io/chinua-achebe-tribute-page/" target="_blank">
-                <img class="imgbox" src="image/1.png" alt="chinua-achebe-tribute-page">
-                <p id="projectname">Tribute Page</p>
-                </a>
-            </div>
-
-            <div class="box2">
-                <a href="https://successpower.github.io/survey-form/" target="_blank">
-                <img class="imgbox" src="image/4.png" alt="Survey Form">
-                <p id="projectname">Survey Form</p>
-                </a>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact">
-        <h1 id="work">Lets work together</h1>
-        <a id="profile-link" href="mailto:successimamun@gmail.com" target="_blank">
-        <img id="twitter" src="image/mail.png" alt="mail"> Send a mail
-        </a>
-
-        <a id="profile-link" href="https://twitter.com/Success_Imamun" target="_blank">
-        <img id="twitter" src="image/twitter-black-logo.png" alt=""> Twitter
-        </a>
-
-        <a id="profile-link" href="https://www.linkedin.com/in/success-imamun/" target="_blank">
-        <img id="twitter" src="image/Linkendin-logo.png" alt=""> Linkendin
-        </a>
-
-        <a id="profile-link" href="https://github.com/SuccessPower" target="_blank">
-        <img id="github" src="image/Github-logo.png" alt="">Gitbhub
-        </a>
-
-    </section>
-
-    <footer>
-        <!-- <p></p> -->
-    </footer>
-</body>
-</html>
+  }
+  
