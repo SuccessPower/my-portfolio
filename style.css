@@ -109,10 +109,11 @@ span {
 #projectname {
     background-color: rgb(46, 0, 48);
     width: 100%;
-    height: 40px;
+    height: 60px;
     text-align: center;
-    padding-top: 10px;
-    font-size: 1vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 2vw;
 }
 
 .imgbox {
